@@ -1,0 +1,110 @@
+body {
+    margin: 0px;
+    background-color: rgb(212, 212, 211)
+}
+
+.flex-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.flex-container ul {
+    padding: 15px;
+    display: flex;
+}
+
+.flex-container ul li {
+    padding: 15px;
+    list-style: none;
+    font-size: 25px;
+}
+/*-------------Main content-------------*/
+.main-Image {
+    width: 100%;
+    height: 400px;
+    background-image: url("./dog.jpg");
+    opacity: .6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-title {
+    height: 50px;
+    widows: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+/*-----------Images-------------*/
+
+.logo-container {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.logo-container img {
+    height: 200px;
+}
+
+/*----Dog Profile----------------*/
+
+.profile-container {
+    padding: 20px; 
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.profile-container .dogpro {
+    height: 200px;
+    border: 2px solid rgb(76, 51, 190);
+    border-radius: 50%;
+}
+
+h2 {
+    margin: 69px;
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.mypic {
+    height: 170px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width:768px) {
+    .flex-container {
+        flex-direction: column;
+
+    }
+
+    .flex-container ul {
+        flex-direction: column;
+    }
+
+    h2 {
+        position: relative;
+        left: 15%;
+        top: 50px;
+    }
+
+    .mypic {
+        flex-direction: column;
+        width: 40%;
+        align-content:center;
+    }
+}
